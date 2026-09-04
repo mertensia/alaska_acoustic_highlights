@@ -630,6 +630,15 @@
     "source_filename": "gaarnnut_20140705.webp"
   },
   {
+    "id": "gaarnutu_20140610",
+    "path": "highlights/site_photos/gaarnutu_20140610.webp",
+    "site_key": "GAARNUTU",
+    "park_code": "GAAR",
+    "site_code": "NUTU",
+    "taken_date": "2014-06-10",
+    "source_filename": "gaarnutu_20140610.webp"
+  },
+  {
     "id": "gaarnwal_20140101",
     "path": "highlights/site_photos/gaarnwal_20140101.webp",
     "site_key": "GAARNWAL",
@@ -763,6 +772,15 @@
     "site_code": "DORI",
     "taken_date": "2016-01-01",
     "source_filename": "katmdori_20160101.webp"
+  },
+  {
+    "id": "katmdori_20160729",
+    "path": "highlights/site_photos/katmdori_20160729.webp",
+    "site_key": "KATMDORI",
+    "park_code": "KATM",
+    "site_code": "DORI",
+    "taken_date": "2016-07-29",
+    "source_filename": "katmdori_20160729.webp"
   },
   {
     "id": "katmjojo_20160101",
