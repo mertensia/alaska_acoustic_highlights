@@ -9,6 +9,8 @@ const spectrogramExampleClip = getClipById("denawocr_20150624_202549");
 const denaliTreeClip = getClipById("denamoos_20180814_105458");
 const exampleClipHref = withBase(`clips/${spectrogramExampleClip.id}/`);
 const denaliTreeClipHref = withBase(`clips/${denaliTreeClip.id}/`);
+const shareQrImage = withBase("alaska_acoustic_highlights_qr.png");
+const siteUrl = "https://mertensia.github.io/alaska_acoustic_highlights/";
 ---
 
 <BaseLayout title="About" description="About Soundscapes of Alaska — an unofficial showcase of NPS Alaska acoustic monitoring highlights.">
@@ -83,6 +85,22 @@ const denaliTreeClipHref = withBase(`clips/${denaliTreeClip.id}/`);
     which analyzes spectrograms to classify bird song and is the algorithm that enables automatic bird ID in the{" "}
     <ExternalLink href="https://merlin.allaboutbirds.org/" label="popular Merlin app" />.
   </p>
+
+  <h2>Share this website!</h2>
+  <p>
+    Scan the code below to open the site on a phone, or share the link:{" "}
+    <a href={siteUrl}>{siteUrl}</a>
+  </p>
+  <figure class="share-qr">
+    <img
+      src={shareQrImage}
+      alt="QR code linking to the Soundscapes of Alaska website"
+      width="330"
+      height="330"
+      loading="lazy"
+      decoding="async"
+    />
+  </figure>
 </BaseLayout>
 
 <style>
@@ -124,5 +142,19 @@ const denaliTreeClipHref = withBase(`clips/${denaliTreeClip.id}/`);
   .spectrogram-guide__examples-label {
     list-style: none;
     margin-top: 0.25rem;
+  }
+
+  .share-qr {
+    margin: 0.75rem 0 0;
+    max-width: 12rem;
+  }
+
+  .share-qr img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(27, 58, 43, 0.12);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
   }
 </style>
